@@ -8,7 +8,7 @@
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "hp",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "haters-point-fe"
+    }
+  },
+  "defaultProject": "haters-point-fe",
+  "cli": {
+    "analytics": "9c7e30c3-c4fc-4958-aeca-a549d24fcfbc"
+  }
 }
