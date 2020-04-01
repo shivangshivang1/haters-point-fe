@@ -1,3 +1,4 @@
+import { GetService } from './../../services/get.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service:GetService) { }
 
   ngOnInit(): void {
+    this.service.getPosts().subscribe(result => {
+      console.log(result);
+    });
+
   }
 
 }
