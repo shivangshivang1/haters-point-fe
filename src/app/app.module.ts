@@ -1,3 +1,4 @@
+import { BrandService } from './services/brand.service';
 import { GetService } from './services/get.service';
 import { FeatureModule } from './feature/feature.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,7 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [AppComponent, HeaderComponent, FooterComponent],
   imports: [BrowserModule, AppRoutingModule, FeatureModule, HttpClientModule],
-  providers: [GetService],
+  providers: [GetService,BrandService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
