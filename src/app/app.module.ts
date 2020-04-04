@@ -9,11 +9,18 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './generics/header/header.component';
 import { FooterComponent } from './generics/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, FooterComponent],
-  imports: [BrowserModule, AppRoutingModule, FeatureModule, HttpClientModule],
-  providers: [GetService,BrandService],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FeatureModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+  ],
+  providers: [GetService, BrandService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
