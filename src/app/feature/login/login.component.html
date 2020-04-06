@@ -1,2 +1,6 @@
 <div><label>user name: </label><input type="text" class="hp-input" [(ngModel)]="userName"/></div>
+<p class="w3-text-red" *ngIf="userNameError">{{userNameErrorMsg}}</p>
 <div><label>password: </label><input type="password" class="hp-input"  [(ngModel)]="password"/></div>
+<p class="w3-text-red" *ngIf="passwordError">{{passwordErrorMsg}}</p>
+
+<button class="w3-button w3-black" name="login" (click)="login()">{{buttonText}}</button>
