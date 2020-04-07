@@ -10,7 +10,7 @@
         <mat-label>Email</mat-label>
         <input matInput formControlName="emailFormControl" [errorStateMatcher]="matcher"
                placeholder="Ex. pat@example.com">
-        <mat-hint>Errors appear instantly!</mat-hint>
+        <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
         <mat-error *ngIf="signupForm.controls.emailFormControl.hasError('email') && !signupForm.controls.emailFormControl.hasError('required')">
           Please enter a valid email address
         </mat-error>
@@ -29,7 +29,7 @@
         </mat-form-field>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" (click)="signup()"> Sign up</button>
+      <button mat-raised-button class="w3-black" (click)="signup()"> Sign up</button>
       <!-- <button mat-button></button> -->
     </mat-card-actions>
   </mat-card>
