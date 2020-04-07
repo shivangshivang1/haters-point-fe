@@ -8,15 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
   userName: string;
   password: string;
-<<<<<<< HEAD
-  
-=======
   userNameError: boolean;
   passwordError: boolean;
   userNameErrorMsg: string;
   passwordErrorMsg: string;
   buttonText: string = 'login';
->>>>>>> develop
 
   constructor() {}
 
