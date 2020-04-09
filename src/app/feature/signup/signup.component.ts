@@ -19,6 +19,9 @@ import { ErrorStateMatcher } from '@angular/material/core';
 export class SignupComponent implements OnInit {
   signupForm: FormGroup;
   user: User;
+
+  success: boolean;
+  error: boolean;
   constructor(private userService: UserService) {
     this.signupForm = this.createSignUpFormGroup();
   }
@@ -36,6 +39,8 @@ export class SignupComponent implements OnInit {
   }
 
   signup() {
+    this.success = false;
+    this.error = false;
     console.log(this.signupForm);
     if (this.signupForm.valid) {
       this.user = {
@@ -43,7 +48,11 @@ export class SignupComponent implements OnInit {
         password: this.signupForm.value.passwordFormControl,
       };
       this.userService.signUp(this.user).subscribe((result) => {
-        console.log(result);
+        if (result === 200) {
+          this.success = true;
+        } else {
+          this.error = true;
+        }
       });
     } else {
       alert('there are some errors in the form');
