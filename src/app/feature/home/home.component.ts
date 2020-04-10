@@ -37,4 +37,8 @@ export class HomeComponent implements OnInit {
       this.buttonText = 'Show Data';
     }
   }
+
+  feelingByChild(feeling:any){
+    alert(feeling);
+  }
 }
