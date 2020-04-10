@@ -9,6 +9,7 @@ import {
   FormGroup,
 } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'hp-signup',
@@ -22,7 +23,7 @@ export class SignupComponent implements OnInit {
 
   success: boolean;
   error: boolean;
-  constructor(private userService: UserService) {
+  constructor(private userService: UserService, private router : Router) {
     this.signupForm = this.createSignUpFormGroup();
   }
 

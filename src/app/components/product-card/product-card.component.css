@@ -1,0 +1,8 @@
+.hp-pointer {
+  cursor: pointer;
+}
+
+.hp-pointer:hover {
+  font-size: 36px;
+  color: black;
+}

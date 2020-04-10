@@ -5,5 +5,5 @@
 </div> -->
 
 <div *ngFor ="let parentBrand of brands">
-<hp-product-card [childBrand] ="parentBrand"></hp-product-card>
+<hp-product-card [childBrand] ="parentBrand" (express)="feelingByChild($event)"></hp-product-card>
 </div>
