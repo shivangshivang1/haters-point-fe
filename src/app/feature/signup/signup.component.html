@@ -1,3 +1,15 @@
+
+<div class="w3-panel w3-green w3-margin" *ngIf="success">
+  <h3>Success!</h3>
+  <p>You have been signed in Successfully !</p>
+</div> 
+<div class="w3-panel w3-red w3-margin" *ngIf="error">
+  <h3>Error!</h3>
+  <p>User already exists.</p>
+</div> 
+
+
+
 <div class="card w3-center">
   <form class="example-form" [formGroup]= "signupForm" >
 <mat-card class="example-card">
@@ -10,7 +22,7 @@
         <mat-label>Email</mat-label>
         <input matInput formControlName="emailFormControl" [errorStateMatcher]="matcher"
                placeholder="Ex. pat@example.com">
-        <mat-hint>Errors appear instantly!</mat-hint>
+        <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
         <mat-error *ngIf="signupForm.controls.emailFormControl.hasError('email') && !signupForm.controls.emailFormControl.hasError('required')">
           Please enter a valid email address
         </mat-error>
@@ -29,7 +41,7 @@
         </mat-form-field>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" (click)="signup()"> Sign up</button>
+      <button mat-raised-button class="w3-black" (click)="signup()"> Sign up</button>
       <!-- <button mat-button></button> -->
     </mat-card-actions>
   </mat-card>

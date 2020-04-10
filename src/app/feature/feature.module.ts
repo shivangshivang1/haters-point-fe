@@ -1,3 +1,4 @@
+import { ProductCardComponent } from './../components/product-card/product-card.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
@@ -9,14 +10,15 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 @NgModule({
-  declarations: [HomeComponent, LoginComponent, SignupComponent],
+  declarations: [HomeComponent, LoginComponent, SignupComponent, ProductCardComponent],
   imports: [
     CommonModule,
     FormsModule,
     MatCardModule,
     MatButtonModule,
     ReactiveFormsModule,
-    MatInputModule
+    MatInputModule,
+   
   ],
   exports:[
     MatCardModule,

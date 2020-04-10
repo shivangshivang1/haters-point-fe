@@ -1,0 +1,16 @@
+
+<div class="w3-card w3-margin w3-padding">
+
+    <p>{{childBrand.id}}</p>
+    <p>{{childBrand.name}}</p>
+    <img src="assets/image.jpg" width="100px" height="100px" />
+    <div>
+        <span class="w3-text-red w3-margin">
+            <i class="fa fa-frown w3-text-red w3-margin W3-large" (click)="('Dislikes')"></i>
+                {{childBrand.noOfDislikes}}
+        </span>
+        <span class="w3-text-green w3-margin"><i class="fa fa-frown-open w3-text-green w3-margin" (click)="expressHate('Angry')"></i>{{childBrand.noOfAngry}} </span>
+        <span class="w3-text-yellow w3-margin"><i class="fa fa-meh w3-text-yellow w3-margin" (click)="expressHate('Frustration')"></i> {{childBrand.noOFFrustrations}}</span>
+    </div>
+
+</div>

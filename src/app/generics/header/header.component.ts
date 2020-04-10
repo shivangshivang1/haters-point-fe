@@ -1,3 +1,4 @@
+import { DataTransferService } from './../../services/data-transfer.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   mainTitle:string= "Haters Point";
-  constructor() { }
+  constructor(private transferservice: DataTransferService) { 
+
+  }
 
   ngOnInit(): void {
+    this.transferservice.setData(this.mainTitle);
+
   }
 
   sampleMethod(){

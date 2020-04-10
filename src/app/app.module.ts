@@ -1,3 +1,4 @@
+import { DataTransferService } from './services/data-transfer.service';
 import { BrandService } from './services/brand.service';
 import { GetService } from './services/get.service';
 import { FeatureModule } from './feature/feature.module';
@@ -20,7 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     BrowserAnimationsModule,
   ],
-  providers: [GetService, BrandService],
+  providers: [GetService, BrandService,DataTransferService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

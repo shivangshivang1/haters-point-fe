@@ -1,0 +1,28 @@
+<div style="margin:100px;">
+
+  <i class="fa fa-smile w3-text-black w3-margin w3-large"></i>
+  <i class="fa fa-frown w3-text-black w3-margin w3-large"></i>
+</div>
+
+
+<button class="w3-button w3-black" name="nego" ngDefaultControl  [(ngModel)]="isDataShown" (click)="toggleData()">{{buttonText}}</button>
+<table class="w3-table-all" *ngIf="isDataShown">
+    <thead>
+      <tr class="w3-red">
+        <th>id</th>
+        <th>Brand Name</th>
+        <th>Number of Dislikes</th>
+        <th>Number of angry</th>
+        <th>Number of Frustrations</th>
+
+      </tr>
+    </thead>
+    <tr *ngFor="let  brand of brands">
+      <td>{{brand.id}}</td>
+      <td>{{brand.name}}</td>
+      <td>{{brand.noOfDislikes}}</td>
+      <td>{{brand.noOfAngry}}</td>
+      <td>{{brand.noOFFrustrations}}</td>
+      
+    </tr>
+  </table>

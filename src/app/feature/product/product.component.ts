@@ -1,5 +1,5 @@
-import { BrandService } from './../../services/brand.service';
-import { GetService } from './../../services/get.service';
+import { BrandService } from '../../services/brand.service';
+import { GetService } from '../../services/get.service';
 import { Component, OnInit } from '@angular/core';
 import { BrandModel } from 'src/app/models/brand.model';
 
@@ -36,8 +36,5 @@ export class HomeComponent implements OnInit {
     } else {
       this.buttonText = 'Show Data';
     }
-  }
-  feelingByChild(feeling:any){
-    alert(feeling);
   }
 }
