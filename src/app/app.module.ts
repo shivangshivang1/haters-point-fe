@@ -10,6 +10,7 @@ import { HeaderComponent } from './generics/header/header.component';
 import { FooterComponent } from './generics/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DataTransferService } from './services/data-transfer.service';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, FooterComponent],
@@ -20,7 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     BrowserAnimationsModule,
   ],
-  providers: [GetService, BrandService],
-  bootstrap: [AppComponent]
+  providers: [GetService, BrandService, DataTransferService],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
