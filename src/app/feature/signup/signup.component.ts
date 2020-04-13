@@ -9,6 +9,7 @@ import {
   FormGroup,
 } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'hp-signup',
@@ -19,7 +20,10 @@ import { ErrorStateMatcher } from '@angular/material/core';
 export class SignupComponent implements OnInit {
   signupForm: FormGroup;
   user: User;
-  constructor(private userService: UserService) {
+
+  success: boolean;
+  error: boolean;
+  constructor(private userService: UserService, private router : Router) {
     this.signupForm = this.createSignUpFormGroup();
   }
 
@@ -36,6 +40,8 @@ export class SignupComponent implements OnInit {
   }
 
   signup() {
+    this.success = false;
+    this.error = false;
     console.log(this.signupForm);
     if (this.signupForm.valid) {
       this.user = {
@@ -43,7 +49,11 @@ export class SignupComponent implements OnInit {
         password: this.signupForm.value.passwordFormControl,
       };
       this.userService.signUp(this.user).subscribe((result) => {
-        console.log(result);
+        if (result === 200) {
+          this.success = true;
+        } else {
+          this.error = true;
+        }
       });
     } else {
       alert('there are some errors in the form');
