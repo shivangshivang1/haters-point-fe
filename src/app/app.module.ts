@@ -13,9 +13,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 
+
 @NgModule({
   declarations: [AppComponent, HeaderComponent, FooterComponent],
-  imports: [
+        imports: [
     BrowserModule,
     AppRoutingModule,
     FeatureModule,
