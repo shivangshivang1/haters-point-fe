@@ -16,7 +16,9 @@ export class HomeComponent implements OnInit {
   constructor(
     private service: GetService,
     private brandsService: BrandService
-  ) {}
+  ) {
+    
+  }
 
   ngOnInit(): void {
     this.service.getPosts().subscribe(result => {

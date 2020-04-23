@@ -1,3 +1,4 @@
+import { SquareRootPipe } from './pipes/square-root.pipe';
 import { BrandService } from './services/brand.service';
 import { GetService } from './services/get.service';
 import { FeatureModule } from './feature/feature.module';
@@ -11,9 +12,15 @@ import { FooterComponent } from './generics/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DataTransferService } from './services/data-transfer.service';
+import { HighlighterDirective } from './directives/highlighter.directive';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    HighlighterDirective,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

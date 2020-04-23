@@ -1,6 +1,6 @@
 <div class="w3-card w3-margin w3-padding">
   <p>{{ childBrand.id }}</p>
-  <p>{{ childBrand.name }}</p>
+  <p>{{ childBrand.name | uppercase }}</p>
   <img src="assets/brands.jpg" width="100px" height="100px" />
   <div>
     <span class="w3-text-red w3-margin">
@@ -8,8 +8,9 @@
         class="fa fa-frown-open w3-text-red w3-margin w3-large hp-pointer"
         (click)="expressHate('frustration')"
       ></i>
-      {{ childBrand.noOFFrustrations }}
+      {{ childBrand.noOFFrustrations | squareroot }}
     </span>
+    {{ childBrand.noOFFrustrations}}
     <span class="w3-text-green w3-margin">
       <i
         class="fa fa-meh w3-text-green w3-margin w3-large hp-pointer"
@@ -17,5 +18,6 @@
       ></i>
       {{ childBrand.noOfAngry }}
     </span>
+    <p>{{6969.00 | currency: "INR" : false}}</p>
   </div>
 </div>

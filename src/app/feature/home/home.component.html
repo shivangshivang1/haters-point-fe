@@ -3,6 +3,7 @@
 <i class="fa fa-meh w3-text-black w3-margin w3-large"></i>
 <i class="fa fa-angry w3-text-black w3-margin w3-large"></i>
 </div> -->
+<h1 class="w3-center" hpHighlighter >Products</h1>
 
 <div *ngFor ="let parentBrand of brands">
 <hp-product-card [childBrand] ="parentBrand" (express)="feelingByChild($event)"></hp-product-card>

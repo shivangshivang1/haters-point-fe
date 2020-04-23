@@ -1,3 +1,5 @@
+import { SquareRootPipe } from './../pipes/square-root.pipe';
+import { HighlighterDirective } from './../directives/highlighter.directive';
 import { ProductCardComponent } from './../components/product-card/product-card.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -15,6 +17,7 @@ import { MatInputModule } from '@angular/material/input';
     LoginComponent,
     SignupComponent,
     ProductCardComponent,
+    SquareRootPipe
   ],
   imports: [
     CommonModule,
