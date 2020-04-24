@@ -5,3 +5,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .form-input{
     width:100%;
 }
+
+.hp-card {
+    width: 13.99999%;
+    margin: 5px;
+    overflow: hidden;
+    transition: box-shadow 0.5s;
+  }
+  .hp-card:hover {
+    cursor: pointer;
+    box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.75);
+  }

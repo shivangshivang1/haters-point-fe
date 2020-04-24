@@ -1,8 +1,11 @@
-.hp-pointer {
-  cursor: pointer;
+.thumbnail-product-resize {
+  max-width: 100%;
+  height: 130px;
+}
+.feeling {
+  font-size: 18px;
 }
 
-.hp-pointer:hover {
-  font-size: 36px;
-  color: black;
+.feeling:hover {
+  font-size: 36px !important;
 }

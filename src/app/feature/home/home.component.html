@@ -4,6 +4,9 @@
 <i class="fa fa-angry w3-text-black w3-margin w3-large"></i>
 </div> -->
 
-<div *ngFor ="let parentBrand of brands">
+<!-- <div *ngFor ="let parentBrand of brands">
 <hp-product-card [childBrand] ="parentBrand" (express)="feelingByChild($event)"></hp-product-card>
+</div> -->
+<div *ngFor ="let brand of brands">   
+<hp-product-card [brand]="brand"></hp-product-card>
 </div>

@@ -7,7 +7,7 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./product-card.component.css'],
 })
 export class ProductCardComponent implements OnInit {
-  @Input() childBrand: BrandModel;
+  @Input() brand: BrandModel;
   @Output() express = new EventEmitter<string>();
 
   constructor() {}
