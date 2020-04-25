@@ -1,3 +1,4 @@
+import { ExpressFeeling } from './../../models/express.model';
 import { BrandModel } from 'src/app/models/brand.model';
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
@@ -7,14 +8,22 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./product-card.component.css'],
 })
 export class ProductCardComponent implements OnInit {
-  @Input() childBrand: BrandModel;
-  @Output() express = new EventEmitter<string>();
+  @Input() brand: BrandModel;
+  @Output() express = new EventEmitter<ExpressFeeling>();
+  reaction: string;
+  feeling: ExpressFeeling = {
+    feeling: '',
+    brandName: '',
+  };
 
   constructor() {}
 
   ngOnInit(): void {}
 
-  expressHate(feeling: string) {
-    this.express.emit(feeling);
+  expressFeeling(feeling: string) {
+    this.reaction = feeling;
+    this.feeling.feeling = feeling;
+    this.feeling.brandName = this.brand.name;
+    this.express.emit(this.feeling);
   }
 }
