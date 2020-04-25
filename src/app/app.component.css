@@ -8,3 +8,7 @@ body {
     background-color: #333333 !important;
     color:#fff;
 }
+
+.hp-pointer{
+  cursor: pointer;
+}

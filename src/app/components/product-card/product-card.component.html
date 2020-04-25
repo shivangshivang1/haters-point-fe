@@ -1,0 +1,36 @@
+<mat-card class="hp-card w3-center">
+  <mat-card-header>
+    <mat-card-title class="w3-center">{{ brand.name }}</mat-card-title>
+    <mat-card-subtitle></mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <img src="assets/brands.jpg" class="thumbnail-product-resize" />
+    <p>Hate score : 7.3</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <i
+      class="fa fa-meh w3-quarter feeling no-focus"
+      matTooltip="dislike"
+      (click)="expressFeeling('dislike')"
+      [ngClass]="{ 'icon-click': reaction == 'dislike' }"
+    ></i>
+    <i
+      class="fa fa-frown-open w3-quarter feeling no-focus"
+      matTooltip="hate"
+      (click)="expressFeeling('hate')"
+      [ngClass]="{ 'icon-click': reaction == 'hate' }"
+    ></i>
+    <i
+      class="fa fa-angry w3-quarter feeling no-focus"
+      matTooltip="angry"
+      (click)="expressFeeling('angry')"
+      [ngClass]="{ 'icon-click': reaction == 'angry' }"
+    ></i>
+    <i
+      class="fa fa-tired w3-quarter feeling no-focus icon-click"
+      matTooltip="frustration"
+      (click)="expressFeeling('frustration')"
+      [ngClass]="{ 'icon-click': reaction == 'frustration' }"
+    ></i>
+  </mat-card-actions>
+</mat-card>

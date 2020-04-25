@@ -1,0 +1,16 @@
+.thumbnail-product-resize {
+  max-width: 100%;
+  height: 130px;
+}
+.feeling {
+  font-size: 18px;
+  transition: font-size 0.5s;
+
+}
+
+.feeling:hover {
+  font-size: 36px !important;
+  color: red;
+  z-index: 999;
+
+}
