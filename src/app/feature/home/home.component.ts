@@ -1,3 +1,4 @@
+import { ExpressFeeling } from './../../models/express.model';
 import { BrandService } from './../../services/brand.service';
 import { GetService } from './../../services/get.service';
 import { Component, OnInit } from '@angular/core';
@@ -38,7 +39,7 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  feelingByChild(feeling:any){
-    alert(feeling);
+  feelingByChild(feeling:ExpressFeeling){
+    console.log("you  are "+ feeling.feeling+" on "+feeling.brandName);
   }
 }

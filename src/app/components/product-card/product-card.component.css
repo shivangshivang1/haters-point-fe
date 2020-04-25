@@ -4,8 +4,13 @@
 }
 .feeling {
   font-size: 18px;
+  transition: font-size 0.5s;
+
 }
 
 .feeling:hover {
   font-size: 36px !important;
+  color: red;
+  z-index: 999;
+
 }
