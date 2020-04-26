@@ -11,7 +11,7 @@ import { HeaderComponent } from './generics/header/header.component';
 import { FooterComponent } from './generics/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ProductCardComponent } from './components/product-card/product-card.component';
+
 
 
 @NgModule({
