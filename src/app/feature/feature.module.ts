@@ -9,6 +9,8 @@ import { SignupComponent } from './signup/signup.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { MatTooltipModule } from '@angular/material/tooltip';
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -23,7 +25,8 @@ import { MatInputModule } from '@angular/material/input';
     MatButtonModule,
     ReactiveFormsModule,
     MatInputModule,
+    MatTooltipModule,
   ],
-  exports: [MatCardModule, MatButtonModule, MatInputModule],
+  exports: [MatCardModule, MatButtonModule, MatInputModule, MatTooltipModule],
 })
 export class FeatureModule {}

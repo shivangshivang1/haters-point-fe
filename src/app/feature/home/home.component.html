@@ -4,6 +4,7 @@
 <i class="fa fa-angry w3-text-black w3-margin w3-large"></i>
 </div> -->
 
+<<<<<<< HEAD
 
 
 
@@ -45,3 +46,19 @@
 </div>
 </body>
 </html>
+=======
+<!-- <div *ngFor ="let parentBrand of brands">
+<hp-product-card [childBrand] ="parentBrand" (express)="feelingByChild($event)"></hp-product-card>
+</div> -->
+<div class="row"  *ngFor="let brand of brands">
+  <div class="col-md-3 col-lg-3"></div>
+  <div class="col-md-3 col-lg-3">
+    <hp-product-card
+      [brand]="brand"
+      (express)="feelingByChild($event)"
+    ></hp-product-card>
+  </div>
+  <div class="col-md-3 col-lg-3"></div>
+  <div class="col-md-3 col-lg-3"></div>
+</div>
+>>>>>>> develop
