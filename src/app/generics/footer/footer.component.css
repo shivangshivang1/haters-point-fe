@@ -8,6 +8,7 @@ p{
 }
 h3{
     color: #fff;
+
 }
 h3,h2{
     font-size: 18px;
@@ -18,20 +19,21 @@ h3,h2{
     letter-spacing: 3px;
     margin: 10px 0;
 }
-.segment-two h3{
+.segment-two {
     font-family: Poppins;
     color: #fff;
-    /* letter-spacing: 3px;
-    margin: 10px 0; */
+    /* letter-spacing: 3px;*/
+
 }
-.segment-two h3:before{
+/* .segment-two h3:before{
     content: '|';
     color: #c65039;
-}
+} */
 .segment-two ul{
     margin: 0;
     padding: 0;
     list-style: none;
+    
 }
 .segment-two ul li{
     border-bottom: 1px solid rgb(255,255,255,0.3);
@@ -44,17 +46,18 @@ h3,h2{
 .segment-three h3{
     color: #fff;
     font-family: Poppins;
+    
 }
 .segment-three h3:before{
     content: '|';
-    color: #c65039;
+    color: white;
     padding-right: 10px;;
 }
 .segment-three a{
-    background: #494848;
+    background: black;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 .segment-four h3{
     font-family: Poppins;
