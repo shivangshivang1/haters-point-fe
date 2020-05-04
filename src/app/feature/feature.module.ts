@@ -11,12 +11,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
+
+ 
 @NgModule({
   declarations: [
     HomeComponent,
     LoginComponent,
     SignupComponent,
     ProductCardComponent,
+    
   ],
   imports: [
     CommonModule,
@@ -25,7 +28,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatButtonModule,
     ReactiveFormsModule,
     MatInputModule,
-    MatTooltipModule,
+    
   ],
   exports: [MatCardModule, MatButtonModule, MatInputModule, MatTooltipModule],
 })
