@@ -28,6 +28,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatButtonModule,
     ReactiveFormsModule,
     MatInputModule,
+    MatTooltipModule,
     
   ],
   exports: [MatCardModule, MatButtonModule, MatInputModule, MatTooltipModule],
